@@ -1,8 +1,8 @@
 {
   "name": "react-valida-hook-ionic",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Form validation Hooks for react ionic",
-  "repository": "https://github.com/highercomve/react-valida-hook",
+  "repository": "https://github.com/argentaegis/react-valida-hook-ionic",
   "author": "Andrew Jones <argentaegis@gmail.com>",
   "license": "MIT",
   "private": false,
