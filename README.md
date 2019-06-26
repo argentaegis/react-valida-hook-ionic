@@ -1,7 +1,8 @@
-[![Codeship Status for highercomve/react-valida-hook](https://app.codeship.com/projects/60f58b80-69f6-0137-0255-3699c784bbf0/status?branch=master)](https://app.codeship.com/projects/346272)
-
-React Valida Hook
+React Valida Hook Ionic
 ==========================================
+This is a fork of useful work done by the team at react-valida-hook https://www.npmjs.com/package/react-valida-hook with minor modification so that it plays nice with React+Ionic.
+
+All credit is to that team.
 
 Custom hook to create validable forms using `valida-js` for validation
 
@@ -13,23 +14,10 @@ Is important to know, valida-js don't return error message, only the and array o
 ## How to install 
 
 ```bash
-yarn add react-valida-hook
-# or
-npm install react-valida-hook
-```
-
-```js
-/**
- * useValitedForm Hook
- * @param {Object} initialData
- * @param {Array} validation rules
- * @param {Object} valida-js validators. default: valida-js default validators
- * */
+npm install react-valida-hook-ionic
 ```
 
 ## How to use it
-
-Live example [here](https://frontarm.com/demoboard/?id=b7b836cc-327f-4061-9aeb-621458064c97)
 
 ```js
 import React from 'react'
@@ -74,30 +62,34 @@ function UserForm () {
   }
   return (
     <form noValidate={true} onSubmit={submit}>
-      <div>
-        <label htmlFor='first-name'>First name:</label>
-        <input name='first-name' id='first-name' { ...formData.firstName.input } />
-        <div className='errors'>
-          { validation.errors.firstName.join(', ')}
-        </div>
-      </div>
-      <div>
-        <label htmlFor='last-name'>Last name:</label>
-        <input name='last-name' id='last-name' { ...formData.lastName.input } />
-        <div className='errors'>
-          { validation.errors.lastName.join(', ')}
-        </div>
-      </div>
-      <div>
-        <label htmlFor='email'>Email:</label>
-        <input name='email' id='email' { ...formData.email.input } />
+      <IonItem>
+        <IonIcon name={'mail'}/>
+        <IonInput
+          placeholder='Email'
+          name='email'
+          id='email'
+          {...formData.email.input}
+        />
         <div className='errors'>
           { validation.errors.email.join(', ')}
         </div>
-      </div>
-      <div>
-        <input type="submit" value="Submit" />
-      </div>
+      </IonItem>
+      <IonItem>
+        <IonIcon name={'person'}/>
+        <IonInput
+          placeholder='Display Name'
+          name='name'
+          id='name'
+          {...formData.name.input}
+        />
+        <div className='errors'>
+          { validation.errors.name.join(', ')}
+        </div>
+      </IonItem>
+      <IonButton type='submit' expand='block'
+      >
+        JOIN THE SQUAD
+      </IonButton>
     </form>
   )
 }
@@ -108,28 +100,4 @@ ReactDOM.render(
   </div>,
   document.getElementById('root')
 )
-```
-
-### How do develop a feature development
-
-#### How to run the project
-
-```bash
-# Install all the dependencies of the project with npm or yarn
-yarn # or npm install
-
-# Run the development server with
-yarn dev # or npm run dev
-```
-
-#### How to run test
-
-```bash
-yarn test # or yarn test --watch
-```
-
-#### How to build the project
-
-```bash
-yarn build # npm run build
 ```
