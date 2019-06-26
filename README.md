@@ -1,6 +1,6 @@
 React Valida Hook Ionic
 ==========================================
-This is a fork of useful work done by the team at react-valida-hook https://www.npmjs.com/package/react-valida-hook with minor modification so that it plays nice with React+Ionic.
+This is a fork of useful work done by Sergio Marin at react-valida-hook https://www.npmjs.com/package/react-valida-hook with minor modification so that it plays nice with React+Ionic.
 
 All credit is to that team.
 

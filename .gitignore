@@ -3,3 +3,6 @@ build/
 .cache
 dist
 .DS_Store
+.vscode
+.idea
+package-lock.json

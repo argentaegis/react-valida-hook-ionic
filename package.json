@@ -1,9 +1,9 @@
 {
-  "name": "react-valida-hook",
+  "name": "react-valida-hook-ionic",
   "version": "0.0.9",
-  "description": "Form validation Hooks for react",
+  "description": "Form validation Hooks for react ionic",
   "repository": "https://github.com/highercomve/react-valida-hook",
-  "author": "Sergio Marin",
+  "author": "Andrew Jones <argentaegis@gmail.com>",
   "license": "MIT",
   "private": false,
   "main": "lib/index.js",
