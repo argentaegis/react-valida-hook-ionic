@@ -20,6 +20,10 @@ npm install react-valida-hook-ionic
 ## How to use it
 
 ```js
+import React from 'react';
+import {
+  IonItem, IonInput, IonIcon, IonButton,
+} from '@ionic/react';
 import React from 'react'
 import ReactDOM from 'react-dom'
 import useValitedForm from 'react-valida-hook-ionic'
@@ -94,10 +98,5 @@ function UserForm () {
   )
 }
 
-ReactDOM.render(
-  <div>
-    <UserForm />
-  </div>,
-  document.getElementById('root')
-)
+export default UserForm;
 ```
