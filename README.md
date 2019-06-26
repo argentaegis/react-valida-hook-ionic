@@ -24,26 +24,18 @@ import React from 'react';
 import {
   IonItem, IonInput, IonIcon, IonButton,
 } from '@ionic/react';
-import React from 'react'
-import ReactDOM from 'react-dom'
 import useValitedForm from 'react-valida-hook-ionic'
 
 const initialState = {
-  firstName: '',
-  lastName: '',
+  name: '',
   email: ''
 }
 
 const validations = [
   {
-    name: 'firstName',
+    name: 'name',
     type: 'required',
-    stateMap: 'firstName'
-  },
-  {
-    name: 'lastName',
-    type: 'required',
-    stateMap: 'lastName'
+    stateMap: 'name'
   },
   {
     name: 'email',
