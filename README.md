@@ -22,7 +22,7 @@ npm install react-valida-hook-ionic
 ```js
 import React from 'react'
 import ReactDOM from 'react-dom'
-import useValitedForm from 'react-valida-hook'
+import useValitedForm from 'react-valida-hook-ionic'
 
 const initialState = {
   firstName: '',
